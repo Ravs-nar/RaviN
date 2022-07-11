@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Ravi Narayan</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="project-styles.css">
+    <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css?family=Muli%7CRoboto:400,300,500,700,900" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   </head>
@@ -18,58 +18,62 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Work History</a>
+              <a class="nav-link" href="Workindex.html">Work Experience</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">Knowledge</a>
+              <a class="nav-link" href="about.html">About Me</a>
             </li>
           </ul>
     </header>
-    <h1 class="titletag">PORTFOLIO</h1>
+    <!-- projects -->
+    <h1 class="mb-5">PORTFOLIO</h1>
 <body>
-    <div class="card" style="width: 18rem;">
-        <img src="images/gaming.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-          <h2 class="card-title">JavaScript Game</h2>
-          <p>This project demonstrates my ability to use JavaScript to build a simple game.</p>
-          <a href="#" class="btn btn-primary">Fill</a>
-        </div>
-      </div>
+      <div class="container">
+        <div class="row justify-content-around mb-4">
+            <div class="card col-5">
+                  <img src="images/gaming.jpg" class="img rounded" alt="person playing computer game">
+                  <div class="card-body">
+                      <h2 class="card-title">JavaScript Game</h2>
+                      <p>This project demonstrates my ability to use JavaScript to build a simple game.</p>
+                      <a href="JS-Gameshow/Gameindex.html" class="btn btn-primary">Learn More</a>
+                  </div>
+              </div>
 
-      <div class="card" style="width: 18rem;">
-        <img src="images/dashboard.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h2>WebAPP Dashboard</h2>
-            <p>This project searches through a specific database to find information that the user is trying to look up.</p>
-          <a href="#" class="btn btn-primary">Fill</a>
+              <div class="card col-5">
+                <img src="images/dashboard.jpg" class="card-img-top rounded" alt="computer dashboard">
+                  <div class="card-body">
+                      <h2>WebAPP Dashboard</h2>
+                      <p>This project searches through a specific database to find information that the user is trying to look up.</p>
+                    <a href="webappDD/webappindex.html" class="btn btn-primary">Learn More</a>
+                  </div>
+              </div>
         </div>
-      </div>
+            <div class="row justify-content-around mt-4">
+                <div class="card col-5">
+                    <img src="images/Employees.jpg" class="card-img-top rounded" alt="People at a meeting">
+                    <div class="card-body">
+                        <h2>Employee Directory using AJAX request</h2>
+                        <p>This project searches for employyes at a company.</p>
+                        <a href="Employee-Directory/employeeindex.html" class="btn btn-primary">Learn More</a>
+                    </div>
+                </div>
 
-      <div class="card" style="width: 18rem;">
-        <img src="images/Employees.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h2>Employye Directory using AJAX request</h2>
-            <p>This project searches for employyes at a company.</p>>
-          <a href="#" class="btn btn-primary">Fill</a>
-        </div>
-      </div>
-
-      <div class="card" style="width: 18rem;">
-        <img src="images/gallery.jpg" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h2>Interactive Photo Gallery</h2>
-            <p>This project searches for employyes at a company.</p>>
-          <a href="#" class="btn btn-primary">Fill</a>
-        </div>
-      </div>
-
+                <div class="card col-5">
+                    <img src="images/gallery.jpg" class="card-img-top rounded" alt="person sitting and looking at photos on a wall">
+                        <div class="card-body">
+                          <h2>Interactive Photo Gallery</h2>
+                          <p>This project searches for employee at a company.</p>
+                          <a href="Photo-Gallery/photoindex.html" class="btn btn-primary">Learn More</a>
+                      </div>
+                </div>
+            </div> 
     </div>  
-    <div class="me">
-    <h3 id="con">CONTACT</h3>
-    <p class="do">If your're intreased in Web devleopment or digital markting services.</p>
-    <p> <span style="color:grey">Phone:</span> +1(111) 555-1234</p>
-    <p> <span style="color:grey"> Email: </span>ravi.narayan09@gmail.com</p>
-</div>
+      <!-- Footer/contact information -->
+        <div>
+          <h3 class="mt-5">CONTACT</h3>
+          <p> <span style="color:grey">Phone:</span> +1(503)-941-1234</p>
+          <p> <span style="color:grey"> Email: </span>ravi.narayan09@gmail.com</p>
+      </div>
 
 </body>
 </html>

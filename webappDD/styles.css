@@ -1,0 +1,582 @@
+*{
+box-sizing: border-box;
+margin: 0px;
+padding: 0px;
+text-align: center;
+align-items: center;
+font-style: normal ;
+font-family:Arial, Helvetica, sans-serif;
+
+
+}
+
+
+/*Image sizes----------------------------------------------------------------*/
+.bell{
+    max-width: 15%;
+    fill: white;
+    transition: transform .5s ease-in;
+}
+
+.bell:hover {
+    transform-origin: center;
+    transform: rotate(360deg);
+}
+
+
+
+
+.sm {
+    background-color: rgb(127, 122, 192);
+    fill:white;
+    border-radius: 50px;
+    padding: 22px;
+}
+
+.dot {
+    height: 4px;
+    width: 4px;
+    background-color: greenyellow;
+    border-radius: 50%;
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.icon {
+    fill: white;
+}
+
+.emblem {
+    max-width: 45%;
+    fill: white;
+}
+.pp{
+    max-width: 17%;
+    border-radius: 50%;
+    margin-top: 10px;
+}
+
+.member-container {
+    border-top: solid rgb(214, 205, 205);
+    padding-bottom: 5px;
+    border-bottom: solid rgb(214, 205, 205);
+
+}
+
+
+/*SVG-----------------------------*/
+.face {
+    color: aliceblue;
+}
+
+/*JavaScript---------------------------------------*/
+#traffic-chart {
+    border-bottom: 1px solid rgb(105, 103, 103);
+}
+
+.daily-traffic {
+   
+    border-bottom: 1px solid rgb(105, 103, 103);
+}
+
+.mobile-donut {
+    border-bottom: 1px solid rgb(105, 103, 103);
+    
+}
+
+/*Font sizes--------------------------------------------------------------------------*/
+.webhead {
+margin-left: 15px; 
+width: 92px; 
+font-family:Arial, Helvetica, sans-serif;
+font-weight: 100;
+font-size: 19px;
+}
+
+.stext {
+    font-size: 39px;
+    color:rgb(105, 103, 103);
+}
+/**Grid Layout--------------------------------------------------------------------**/
+.grid-container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    grid-template-areas: "header" "navigation" "main";
+}
+
+.top-header {
+    grid-area: header;
+    background-color: rgb(127, 122, 192);
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+nav {
+    grid-area: navigation;
+    background-color: rgb(91, 90, 134);
+}
+
+.main {
+    grid-area:main;
+    
+}
+
+.headline {
+    margin-top: 5px;
+    font-style: normal; 
+    text-align: left;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+/**header---------------------------------------------------------------------**/
+.top-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: whitesmoke;
+}
+.top-head {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    color: whitesmoke;
+}
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.tab {
+height: 50px;
+width: 55%;
+background-color: rgba(105, 87, 87, 0.24);
+margin-bottom: 10px;
+border: solid 1px grey;
+}
+
+/**nav-------------------------------------------------------------------------------*/
+
+
+nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    color: whitesmoke;
+    
+}
+/*alert tab-------------------------------------------------------------------------------------------*/
+.alert-banner {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(127, 122, 192);
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 5px;
+    color: whitesmoke;
+    border-radius: 10px;
+}
+.alert {
+    padding : 5px;
+}
+
+.traffic-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    list-style-type: none;
+    padding-right:8px;
+    padding-left: 8px;
+}
+
+.traffic-nav-link {
+    font-size: 15px;
+    margin-left: 5px;
+    margin-right: 10px;
+}
+/*charts*----------------------------------------------------------------------------------------------*/
+#traffic-chart {
+    height: 400px;
+}
+
+/*social------------------------------------------------------------------------------------------------*/
+
+
+
+.social-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: rgb(216, 223, 208);
+    padding: 4%;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+    border: solid 1px rgb(167, 163, 163);
+}
+
+.social-platform {
+color:rgb(127, 122, 192); 
+font-size:16px;
+text-align: left;
+}
+
+
+.low {
+    margin-bottom: 7px;
+    font-weight:bold;
+}
+
+
+
+.widget-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.mark {
+    color: transparent;
+}
+
+
+/*Form---------------------------------------------------------------*/
+.form-field {
+    padding: 15px 60px 15px 0px ;
+    border-radius: 5px;
+    text-align: start;
+    width: 250px;
+    color: rgb(150, 143, 143);  
+}
+.form-area {
+    padding: 3px 72px 55px 0px;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    border-radius: 5px;
+    width: 250px;
+}
+.button-primary {
+    padding: 15px 36px 15px 36px;
+    width : 250px;
+    border-radius: 5px; 
+    background-color: rgb(127, 122, 192);
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+
+/***Toggle styles-----------------------------------------------------------------*/
+input[type="checkbox"].toggle {
+    opacity: 0;
+    left: -9000px;
+    top: -9000px;
+}
+
+input[type="checkbox"].toggle + label {
+   position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+input[type="checkbox"].toggle + label::before {
+   display: flex;
+   justify-content: start;
+   align-items: center;
+    content: "ON";
+    width: 5em;
+    height: 2em;
+    font-size: 1em;
+    background-color: rgb(127, 122, 192);
+    border-radius: 1em;
+    color: white;
+    margin-left: 2em;
+    transition: 200ms ease-in-out;
+
+}
+
+input[type="checkbox"].toggle + label::after {
+   position: absolute;
+    right: 3.1em;
+    content: "";
+    width: 1.9em;
+    height: 1.9em;
+    background-color: rgb(221, 221, 221);
+    border-radius: 1em;
+    transition: 200ms ease-in-out;
+}
+input[type="checkbox"].toggle:checked + label::after {
+    transform: translateX(159%);
+    background-color: rgb(221, 221, 221);
+}
+
+.button-primary1 {
+width: 40%; 
+height: 40px; 
+margin-right: 10px;
+background-color: rgb(127, 122, 192);
+color: whitesmoke;
+border-radius: 5px;
+}
+
+.button-disabled {
+width: 40%; 
+height: 40px;
+color: whitesmoke;
+border-radius: 5px;
+background-color: rgb(191, 192, 182);
+}
+
+
+.toggle-section {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+
+
+
+/*--------------------------------------------------------------------------------------*/
+
+@media (min-width: 768px){
+
+
+body {
+    position: relative;
+    
+}
+
+
+    .grid-container {
+    margin-left: 60px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-rows: minmax(200px, auto);
+    grid-template-areas: 
+    "header header"
+    "navigation main"
+     "social social"
+     "account account"
+     "ra ra"
+     "sign sign"
+     "set set"
+}
+
+
+.emblem {
+    
+    max-width: 64%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    position:absolute;
+    justify-content: flex-start;
+    height: 97%;
+    width: 55px;
+    z-index: 1;
+    left: 0;
+    background-color: rgb(91, 90, 134);
+    overflow-x: hidden;
+    padding: 0;
+
+  }
+
+
+  
+.charts {
+    grid-column-start:1 ;
+    grid-column-end:-1 ;
+}
+
+.daily-traffic {
+    grid-area: navigation;
+}
+
+.mobile-donut {
+    grid-area: main;
+    border-left:1px solid rgb(105, 103, 103);
+
+}
+
+.shead {
+    grid-area: social;
+    margin-bottom: 150px;
+}
+/*Social Icons--------------------------------------------------------------------*/
+
+.look {
+    grid-area: social;
+    display: flex;
+    width: 25%;
+    flex-direction: row; 
+    justify-content: space-between;
+}
+
+
+/*Social Activity-----------------------------------*/
+
+.members {
+grid-area: account;
+border-right: solid 2px rgb(214, 205, 205); 
+
+}
+.header-box{
+    border-top: solid 2px rgb(214, 205, 205);
+    
+}
+.member-container1 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+
+.member-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    
+}
+.mark {
+    color: black;
+    text-align: end;
+    flex-basis: 100%;
+}
+
+.comment {
+    text-align: left;
+}
+
+
+
+
+.low {
+flex-basis: 100%;
+font-size: large;
+font-weight: bold;
+text-align: end;
+}
+
+.members-text {
+    margin-left: 20px;
+    
+}
+
+.name {
+    text-align: left;
+}
+
+.day {
+    text-align: left;
+}
+
+
+/*Recent social activity---------------------------------------*/
+
+.recent-activity {
+grid-area: ra;
+
+}
+
+/*Form-----------------------------------------------------------------------------------*/
+
+
+.form-field {
+width: 98%;
+}
+.form-area{
+    width: 98%;
+}
+.button-primary{
+    width: 98%;
+}
+/*footer----------------------------------------------------------------------------------*/
+.message {
+    grid-area: sign;
+}
+
+.settings {
+    grid-area: set;
+    
+}
+
+.settings-buttons{
+    display: flex;
+    flex-direction: row;
+}
+
+.button-primary1 {
+    width: 50%;
+}
+.button-disabled {
+    width: 48%;
+}
+}
+
+
+/*Min Width of 1024px -----------------------------------------------------------------------------*/ 
+@media (min-width: 1024px) {
+    .grid-container {
+        margin-left: 60px;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-auto-rows: minmax(200px, auto);
+        grid-row-gap: 20px;
+        grid-template-areas: 
+        "header header"
+        "navigation main"
+        "social social"
+        "social1 social2"
+        "settings1 settings2"
+}
+
+
+.look {
+    width: 60%;
+    grid-area: social;
+    display: flex;
+    flex-direction: row; 
+    justify-content: flex-start;
+}
+.members {
+    grid-area:social1;
+}
+.recent-activity {
+    grid-area: social2;
+}
+.message {
+    grid-area: settings1;
+}
+.settings {
+    grid-area: settings2;
+}
+
+.stext {
+    font-size: 60px; 
+ }
+
+ .look {
+     width: 100%;
+     margin-left: 55px;
+ }
+
+
+
+
+}
+
