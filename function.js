@@ -46,3 +46,7 @@ function fun7() {
   function fun8(){
     about.style.background ="none";
   }
+
+
+
+  
